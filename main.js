@@ -4,12 +4,12 @@ const yesBtn = getElement("yes-btn");
 const noBtn = getElement("no-btn");
 const tonkla = getElement("tonkla");
 const imagePath = [
-  "/assets/ton1.jpg",
-  "/assets/ton2.jpg",
-  "/assets/ton3.jpg",
-  "/assets/ton4.jpg",
-  "/assets/ton5.jpg",
-  "/assets/ton6.jpg",
+  "https://llxlust.github.io/ammi/assets/ton1.jpg",
+  "https://llxlust.github.io/ammi/assets/ton2.jpg",
+  "https://llxlust.github.io/ammi/assets/ton3.jpg",
+  "https://llxlust.github.io/ammi/assets/ton4.jpg",
+  "https://llxlust.github.io/ammi/assets/ton5.jpg",
+  "https://llxlust.github.io/ammi/assets/ton6.jpg",
 ];
 let imageIndex = 0;
 noBtn.addEventListener("click", () => {
