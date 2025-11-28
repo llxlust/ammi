@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff5f7;
+  font-family: "Dancing Script", cursive;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 10px; /* กัน margin collapse */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 38px;
+  color: #e85a70;
+  font-weight: 700;
+}
+
+.header p {
+  margin: 10px 0 0 0;
+  font-size: 30px;
+  color: #444;
+}
+
+.main-photo img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

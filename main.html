@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anniversary</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Happy 2nd Month Anniversary</h1>
+        <p>Luv you so much na ja</p>
+      </div>
+
+      <div class="main-photo">
+        <img src="./assets/main.jpg" alt="main" />
+      </div>
+
+      <div id="gallery" class="gallery"></div>
+    </div>
+
+    <script>
+      const gallery = document.getElementById("gallery");
+      const images = Array.from(
+        { length: 14 },
+        (_, i) => `/assets/w${i + 1}.jpg`
+      );
+
+      images.forEach((src) => {
+        const img = document.createElement("img");
+        img.src = src;
+        const wrap = document.createElement("div");
+        wrap.classList.add("photo");
+        wrap.appendChild(img);
+        gallery.appendChild(wrap);
+      });
+    </script>
+  </body>
+</html>
